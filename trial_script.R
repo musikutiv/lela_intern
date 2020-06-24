@@ -1,7 +1,7 @@
 
 
 if (!requireNamespace("BiocManager", quietly = TRUE))
-  install.packages("BiocManager", type=source())
+  install.packages("BiocManager", type='source')
 BiocManager::install(version = "3.11")
 
 library(BiocManager)
