@@ -5,7 +5,8 @@ date: 29.11.2020
 output: html_document
 ---
 
-Please note:  the code considers that all data sets are obtained afresh once respective chunks are run. Thus, no files are attached to the project (working directory can be freely chosen).
+Please note:  the code considers that all data sets are obtained afresh once respective chunks are run. 
+Thus, no files are attached to the project (working directory can be freely chosen).
 
 ```{r setup, loading packages}
 library(TCGAbiolinks)
@@ -207,7 +208,8 @@ kable_paper(full_width = F) %>%kable_styling()
 
 #### Methylation Data Access
 
-Using *MultiAssayExperiment* package, methylation data with the matched samples from the gene expression data was obtained and aligned with the transcriptome data.
+Using *MultiAssayExperiment* package, methylation data with the matched samples from the gene expression data was obtained and 
+aligned with the transcriptome data.
 
 ```{r methylome data}
 
@@ -273,7 +275,8 @@ print(PCAprobesplot)
 
 
 
-Methylation levels were tested for differentially expressed genes to find a correlation between gene expression status and methylation of CpGs associated with them. To this end, several additional operations were required to find matching probes for the genes of interest.
+Methylation levels were tested for differentially expressed genes to find a correlation between gene expression status and methylation
+of CpGs associated with them. To this end, several additional operations were required to find matching probes for the genes of interest.
 
 ```{r, matching probes to genes, eval=F, echo=T}
 #probe and gene annotation data
